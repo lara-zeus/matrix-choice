@@ -9,9 +9,9 @@ class CheckboxGrid extends CheckboxList
 {
     protected string $view = 'zeus::filament.components.checkbox-grid';
 
-    protected array|Closure $columnData = [];
+    protected array | Closure $columnData = [];
 
-    protected array|Closure $rowData = [];
+    protected array | Closure $rowData = [];
 
     protected function setUp(): void
     {

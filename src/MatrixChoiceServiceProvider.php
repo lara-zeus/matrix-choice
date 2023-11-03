@@ -2,8 +2,6 @@
 
 namespace LaraZeus\MatrixChoice;
 
-use LaraZeus\Core\CoreServiceProvider;
-use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
