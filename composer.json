@@ -1,0 +1,74 @@
+{
+    "name": "lara-zeus/matrix-choice",
+    "description": "Zeus Matrix Choice multiple choice grid component form for filamentPHP",
+    "keywords": [
+        "laravel",
+        "lara-zeus",
+        "matrix",
+        "choice",
+        "grid",
+        "form",
+        "forms",
+        "feilds",
+        "generator",
+        "self hosted",
+        "maker",
+        "builder",
+        "filamentphp"
+    ],
+    "homepage": "https://larazeus.com/matrix-choice",
+    "support": {
+        "issues": "https://github.com/lara-zeus/matrix-choice/issues",
+        "source": "https://github.com/lara-zeus/matrix-choice"
+    },
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "php coder",
+            "email": "info@larazeus.com",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/forms": "^3.0",
+        "spatie/laravel-package-tools": "^1.15.0",
+        "illuminate/contracts": "^10.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7.0",
+        "nunomaduro/larastan": "^2.0.1",
+        "nunomaduro/phpinsights": "^2.8",
+        "orchestra/testbench": "^8.0",
+        "phpstan/extension-installer": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraZeus\\MatrixChoice\\": "src"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "pint": "vendor/bin/pint",
+        "test:phpstan": "vendor/bin/phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraZeus\\MatrixChoice\\MatrixChoiceServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
