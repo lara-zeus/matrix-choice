@@ -5,13 +5,15 @@ namespace LaraZeus\MatrixChoice\Components;
 use Closure;
 use Filament\Forms\Components\CheckboxList;
 
-class CheckboxGrid extends CheckboxList
+class Matrix extends CheckboxList
 {
-    protected string $view = 'zeus::filament.components.checkbox-grid';
+    protected string $view = 'zeus-matrix-choice::components.matrix-choice';
 
     protected array | Closure $columnData = [];
 
     protected array | Closure $rowData = [];
+
+    protected string $redOrBlue = 'radio';
 
     protected function setUp(): void
     {
@@ -21,11 +23,11 @@ class CheckboxGrid extends CheckboxList
             function () {
                 return function (string $attribute, mixed $value, Closure $fail) {
                     if (blank($value)) {
-                        $fail(__('required selection for each row'));
+                        $fail(__('required a selection for each row'));
                     }
                     foreach ($value as $val) {
                         if (blank(array_filter($val))) {
-                            $fail(__('required selection for each row'));
+                            $fail(__('required a selection for each row'));
                         }
                     }
                 };
@@ -55,5 +57,24 @@ class CheckboxGrid extends CheckboxList
     public function getRowData(): array
     {
         return $this->evaluate($this->rowData);
+    }
+
+    public function getPilColor(): string
+    {
+        return $this->evaluate($this->redOrBlue);
+    }
+
+    public function asRadio(): static
+    {
+        $this->redOrBlue = 'radio';
+
+        return $this;
+    }
+
+    public function asCheckbox(): static
+    {
+        $this->redOrBlue = 'checkbox';
+
+        return $this;
     }
 }
