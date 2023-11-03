@@ -4,8 +4,21 @@
 
 <h4 align="center">Lara-zeus Matrix Choice is a multiple choice grid component form for filamentPHP.</h4>
 
+<p align="center">
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lara-zeus/multiple-choice.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/multiple-choice)
+[![Tests](https://img.shields.io/github/actions/workflow/status/lara-zeus/multiple-choice/run-tests.yml?label=tests&style=flat-square&branch=main)](https://github.com/lara-zeus/multiple-choice/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Code Style](https://img.shields.io/github/actions/workflow/status/lara-zeus/multiple-choice/fix-php-code-style-issues.yml?label=code-style&flat-square)](https://github.com/lara-zeus/multiple-choice/actions?query=workflow%3Afix-php-code-style-issues+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/lara-zeus/multiple-choice.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/multiple-choice)
+[![Total Downloads](https://img.shields.io/github/stars/lara-zeus/multiple-choice?style=flat-square)](https://github.com/lara-zeus/multiple-choice)
+
+</p>
+
 ## features
-- 🔥 Ready to use
+- 🔥 use as a radio button
+- 🔥 use as a checkbox button
+- 🔥 set Column Data and Row Data
+- 🔥 ask me for more
 
 ## Demo
 
