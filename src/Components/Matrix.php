@@ -22,7 +22,7 @@ class Matrix extends CheckboxList
         $this->rules([
             function () {
                 return function (string $attribute, mixed $value, Closure $fail) {
-                    if (blank($value)) {
+                    if (blank($value) || count($this->getRowData()) !== count($value)) {
                         $fail(__('required a selection for each row'));
                     }
                     foreach ($value as $val) {
