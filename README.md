@@ -2,6 +2,8 @@
 <a href="https://larazeus.com"><img src="https://larazeus.com/images/matrix-choice-banner.png?v=1" /></a>
 </p>
 
+"Choice. The problem is choice.”
+
 <h4 align="center">Lara-zeus Matrix Choice is a multiple choice grid component form for filamentPHP.</h4>
 
 <p align="center">
