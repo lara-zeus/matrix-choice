@@ -4,7 +4,7 @@
 
 "Choice. The problem is choice.”
 
-<h4 align="center">Lara-zeus Matrix Choice is a multiple choice grid component form for filamentPHP.</h4>
+<h4 align="center">Lara-zeus Matrix Choice is a multiple choice grid form component for filamentPHP.</h4>
 
 <p align="center">
 
