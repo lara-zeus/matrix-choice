@@ -11,7 +11,7 @@
         <table class="w-full table-auto divide-y divide-gray-200 dark:divide-white/5 bg-white dark:bg-gray-900">
             <thead>
             <tr class="p-2 bg-gray-50 dark:bg-gray-800">
-                <td class=""></td>
+                <td></td>
                 @foreach($columnData as $column)
                     <td class="p-2 text-center">{{ $column }}</td>
                 @endforeach
