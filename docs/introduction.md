@@ -15,6 +15,12 @@ weight: 1
 - 🔥 set Column Data and Row Data
 - 🔥 ask me for more
 
+## Screenshots
+
+![](https://larazeus.com/images/screenshots/matrix-choice/form-1.png)
+
+![](https://larazeus.com/images/screenshots/matrix-choice/form-2.png)
+
 ## Support
 
 Available support channels:
