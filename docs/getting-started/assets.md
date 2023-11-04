@@ -12,4 +12,4 @@ we use [tailwind Css](https://tailwindcss.com/) and custom themes by filament, m
 You need to add these files to your `tailwind.config.js` file in the `content` section.
 
 * filament:
-  * `./vendor/lara-zeus/multiple-choice/resources/views/**/*.blade.php`
+  * `./vendor/lara-zeus/matrix-choice/resources/views/**/*.blade.php`
