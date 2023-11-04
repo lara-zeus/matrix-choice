@@ -26,7 +26,7 @@ class Matrix extends CheckboxList
                         $fail(__('required a selection for each row'));
                     }
                     foreach ($value as $val) {
-                        if (blank(array_filter($val))) {
+                        if (is_array($val) && blank(array_filter($val))) {
                             $fail(__('required a selection for each row'));
                         }
                     }
