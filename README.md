@@ -9,7 +9,6 @@
 <p align="center">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lara-zeus/matrix-choice.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/matrix-choice)
-[![Tests](https://img.shields.io/github/actions/workflow/status/lara-zeus/matrix-choice/run-tests.yml?label=tests&style=flat-square&branch=main)](https://github.com/lara-zeus/matrix-choice/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Code Style](https://img.shields.io/github/actions/workflow/status/lara-zeus/matrix-choice/fix-php-code-style-issues.yml?label=code-style&flat-square)](https://github.com/lara-zeus/matrix-choice/actions?query=workflow%3Afix-php-code-style-issues+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/lara-zeus/matrix-choice.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/matrix-choice)
 [![Total Downloads](https://img.shields.io/github/stars/lara-zeus/matrix-choice?style=flat-square)](https://github.com/lara-zeus/matrix-choice)
