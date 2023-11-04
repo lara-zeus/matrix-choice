@@ -22,6 +22,12 @@
 - 🔥 set Column Data and Row Data
 - 🔥 ask me for more
 
+## Screenshots
+
+![](https://larazeus.com/images/screenshots/matrix-choice/form-1.png)
+
+![](https://larazeus.com/images/screenshots/matrix-choice/form-2.png)
+
 ## Demo
 
 > Visit our demo site: https://demo.larazeus.com/admin/users/create

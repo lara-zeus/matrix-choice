@@ -13,6 +13,8 @@ Matrix Choice is a multiple choice grid component form for filamentPHP
 
 ![](https://larazeus.com/images/screenshots/matrix-choice/form-1.png)
 
+![](https://larazeus.com/images/screenshots/matrix-choice/form-2.png)
+
 ## More Details
 **✨ to learn more about Matrix Choice, please visit:**
 
