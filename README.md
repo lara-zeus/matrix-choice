@@ -24,7 +24,7 @@
 
 ## Demo
 
-> Visit our demo site: https://demo.larazeus.com
+> Visit our demo site: https://demo.larazeus.com/admin/users/create
 
 ## Full Documentation
 
