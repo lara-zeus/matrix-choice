@@ -8,7 +8,7 @@ weight: 3
 Install @zeus Matrix Choice by running the following commands in your Laravel project directory.
 
 ```bash
-composer require lara-zeus/multiple-choice
+composer require lara-zeus/matrix-choice
 ```
 
 ## Usage:
