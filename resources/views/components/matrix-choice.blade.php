@@ -1,4 +1,4 @@
-<x-dynamic-component :component="$getFieldWrapperView()" :field="$field" class="w-[600px] mx-auto my-32">
+<x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
     @php
         $statePath = $getStatePath();
         $pilColor = $getPilColor();
