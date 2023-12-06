@@ -9,9 +9,9 @@ class Matrix extends CheckboxList
 {
     protected string $view = 'zeus-matrix-choice::components.matrix-choice';
 
-    protected array|Closure $columnData = [];
+    protected array | Closure $columnData = [];
 
-    protected array|Closure $rowData = [];
+    protected array | Closure $rowData = [];
 
     protected string $redOrBlue = 'radio';
 
