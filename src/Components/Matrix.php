@@ -9,11 +9,13 @@ class Matrix extends CheckboxList
 {
     protected string $view = 'zeus-matrix-choice::components.matrix-choice';
 
-    protected array | Closure $columnData = [];
+    protected array|Closure $columnData = [];
 
-    protected array | Closure $rowData = [];
+    protected array|Closure $rowData = [];
 
     protected string $redOrBlue = 'radio';
+
+    protected bool $rowSelectRequired = true;
 
     protected function setUp(): void
     {
@@ -22,11 +24,11 @@ class Matrix extends CheckboxList
         $this->rules([
             function () {
                 return function (string $attribute, mixed $value, Closure $fail) {
-                    if (blank($value) || count($this->getRowData()) !== count($value)) {
+                    if ($this->rowSelectRequired && (blank($value) || count($this->getRowData()) !== count($value))) {
                         $fail(__('required a selection for each row'));
                     }
                     foreach ($value as $val) {
-                        if (is_array($val) && blank(array_filter($val))) {
+                        if ($this->rowSelectRequired && is_array($val) && blank(array_filter($val))) {
                             $fail(__('required a selection for each row'));
                         }
                     }
@@ -74,6 +76,13 @@ class Matrix extends CheckboxList
     public function asCheckbox(): static
     {
         $this->redOrBlue = 'checkbox';
+
+        return $this;
+    }
+
+    public function rowSelectRequired(bool $rowSelectRequired = true): static
+    {
+        $this->rowSelectRequired = $rowSelectRequired;
 
         return $this;
     }
