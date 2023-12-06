@@ -15,8 +15,6 @@ class Matrix extends CheckboxList
 
     protected string $redOrBlue = 'radio';
 
-    protected bool $columnSelectRequired = true;
-
     protected bool $rowSelectRequired = true;
 
     protected function setUp(): void
@@ -30,7 +28,7 @@ class Matrix extends CheckboxList
                         $fail(__('required a selection for each row'));
                     }
                     foreach ($value as $val) {
-                        if ($this->columnSelectRequired && is_array($val) && blank(array_filter($val))) {
+                        if ($this->rowSelectRequired && is_array($val) && blank(array_filter($val))) {
                             $fail(__('required a selection for each row'));
                         }
                     }
@@ -78,13 +76,6 @@ class Matrix extends CheckboxList
     public function asCheckbox(): static
     {
         $this->redOrBlue = 'checkbox';
-
-        return $this;
-    }
-
-    public function columnSelectRequired(bool $columnSelectRequired = true): static
-    {
-        $this->columnSelectRequired = $columnSelectRequired;
 
         return $this;
     }
