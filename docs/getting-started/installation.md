@@ -30,5 +30,9 @@ Matrix::make('question')
         'Saturday',
         'Sunday',
         'Monday',
-    ]),
+    ])
+    
+    //set the row selection optional
+    ->rowSelectRequired(false)
+    ,
 ```
