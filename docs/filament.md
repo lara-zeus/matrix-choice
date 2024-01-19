@@ -21,4 +21,4 @@ Matrix Choice is a multiple choice grid component form for filamentPHP
 - [Discord](https://discord.com/channels/883083792112300104/1177055691203158066)
 - [Docs](https://larazeus.com/docs/matrix-choice)
 - [Github](https://github.com/lara-zeus/matrix-choice)
-- [Demo](https://demo.larazeus.com/admin/matrix)
+- [Demo](https://demo.larazeus.com/admin/components-demo/matrix)

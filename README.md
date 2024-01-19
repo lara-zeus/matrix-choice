@@ -29,7 +29,7 @@
 
 ## Demo
 
-> Visit our demo site: https://demo.larazeus.com/admin/matrix
+> Visit our demo site: https://demo.larazeus.com/admin/components-demo/matrix
 
 ## Full Documentation
 
