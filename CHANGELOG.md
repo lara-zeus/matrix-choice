@@ -2,6 +2,16 @@
 
 All notable changes to `Matrix Choice` will be documented in this file
 
+## v3.2.1 - 2024-05-04
+
+### What's Changed
+
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/lara-zeus/matrix-choice/pull/7
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/lara-zeus/matrix-choice/pull/9
+* responsive ui by @atmonshi in https://github.com/lara-zeus/matrix-choice/pull/11
+
+**Full Changelog**: https://github.com/lara-zeus/matrix-choice/compare/v3.2.0...v3.2.1
+
 ## v3.2.0 - 2024-01-08
 
 ### What's Changed
