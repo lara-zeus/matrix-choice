@@ -7,7 +7,7 @@
         $columnData = $getColumnData();
     @endphp
 
-    <div class="overflow-hidden shadow ring-1 ring-gray-200 dark:ring-white/10 ring-opacity-5 rounded-lg">
+    <div class="overflow-x-auto shadow ring-1 ring-gray-200 dark:ring-white/10 ring-opacity-5 rounded-lg">
         <table class="w-full table-auto divide-y divide-gray-200 dark:divide-white/5 bg-white dark:bg-gray-900">
             <thead>
             <tr class="p-2 bg-gray-50 dark:bg-gray-800">
