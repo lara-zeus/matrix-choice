@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://larazeus.com"><img src="https://larazeus.com/images/lara-zeus-matrix-choice.png?v=1" /></a>
+<a href="https://larazeus.com"><img src="https://larazeus.com/images/lara-zeus-matrix-choice.webp?v=1" /></a>
 </p>
 
 "Choice. The problem is choice.”
@@ -23,9 +23,9 @@
 
 ## Screenshots
 
-![](https://larazeus.com/images/screenshots/matrix-choice/form-1.png)
+![](https://larazeus.com/images/screenshots/matrix-choice/form-1.webp)
 
-![](https://larazeus.com/images/screenshots/matrix-choice/form-2.png)
+![](https://larazeus.com/images/screenshots/matrix-choice/form-2.webp)
 
 ## Demo
 

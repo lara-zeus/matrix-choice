@@ -17,9 +17,9 @@ weight: 1
 
 ## Screenshots
 
-![](https://larazeus.com/images/screenshots/matrix-choice/form-1.png)
+![](https://larazeus.com/images/screenshots/matrix-choice/form-1.webp)
 
-![](https://larazeus.com/images/screenshots/matrix-choice/form-2.png)
+![](https://larazeus.com/images/screenshots/matrix-choice/form-2.webp)
 
 ## Support
 
