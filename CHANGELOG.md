@@ -2,6 +2,45 @@
 
 All notable changes to `Matrix Choice` will be documented in this file
 
+## v3.2.2 - 2024-09-04
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.2.0 by @dependabot in https://github.com/lara-zeus/matrix-choice/pull/12
+* allow to disable options by @atmonshi in https://github.com/lara-zeus/matrix-choice/pull/14
+
+#### Allow to disable options:
+
+usage:
+
+```php
+MatrixAlias::make('options')
+    ->disableOptionWhen(fn (string $value): bool => $value === 'm' || $value === 'p' || $value === 'users')
+    ->rowSelectRequired(false)
+
+    ->label('Resources Operations')
+    ->asRadio()
+    ->columnData([
+        'c'=>'Create',
+        'r'=>'Read',
+        'u'=>'Update',
+        'd'=>'Delete',
+        'm'=>'Manage',
+        'p'=>'Approve',
+    ])
+    ->rowData([
+        'users'=>'Users',
+        'companies'=>'Companies',
+        'clients'=>'Clients',
+    ]),
+
+
+```
+output:
+<img width="1096" alt="Screenshot 2024-09-04 at 3 25 12 PM" src="https://github.com/user-attachments/assets/b38eefc5-2c38-4c42-a279-92a38e3d7023">
+
+**Full Changelog**: https://github.com/lara-zeus/matrix-choice/compare/v3.2.1...v3.2.2
+
 ## v3.2.1 - 2024-05-04
 
 ### What's Changed
