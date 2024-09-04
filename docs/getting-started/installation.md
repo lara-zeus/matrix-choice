@@ -22,17 +22,23 @@ Matrix::make('question')
     // or
     ->asCheckbox()
     ->columnData([
-        '🙂',
-        '😐',
-        '🙁',
+        'c' => 'Create',
+        'r' => 'Read',
+        'u' => 'Update',
+        'd' => 'Delete',
+        'm' => 'Manage',
+        'p' => 'Approve',
     ])
     ->rowData([
-        'Saturday',
-        'Sunday',
-        'Monday',
+        'users' => 'Users',
+        'companies' => 'Companies',
+        'clients' => 'Clients',
     ])
     
     //set the row selection optional
     ->rowSelectRequired(false)
+    
+    // to disable any options:
+    ->disableOptionWhen(fn (string $value): bool => $value === 'm' || $value === 'p' || $value === 'users')
     ,
 ```
