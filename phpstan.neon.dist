@@ -8,5 +8,7 @@ parameters:
 
     checkOctaneCompatibility: true
     checkModelProperties: true
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
+
+    ignoreErrors:
+        -
+            identifier: missingType.iterableValue
