@@ -5,7 +5,6 @@
         $id = $getId();
         $rowData = $getRowData();
         $columnData = $getColumnData();
-        $isDisabled = $isDisabled();
     @endphp
 
     <div class="overflow-x-auto shadow ring-1 ring-gray-200 dark:ring-white/10 ring-opacity-5 rounded-lg">
