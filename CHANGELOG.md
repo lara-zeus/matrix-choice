@@ -2,6 +2,14 @@
 
 All notable changes to `Matrix Choice` will be documented in this file
 
+## 4.0.1 - 2025-10-24
+
+### What's Changed
+
+* filament 4 by @atmonshi in https://github.com/lara-zeus/matrix-choice/pull/28
+
+**Full Changelog**: https://github.com/lara-zeus/matrix-choice/compare/4.0.0...4.0.1
+
 ## v3.2.2 - 2024-09-04
 
 ### What's Changed
@@ -33,6 +41,7 @@ MatrixAlias::make('options')
         'companies'=>'Companies',
         'clients'=>'Clients',
     ]),
+
 
 
 ```
