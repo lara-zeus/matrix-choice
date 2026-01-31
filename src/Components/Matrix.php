@@ -4,6 +4,9 @@ namespace LaraZeus\MatrixChoice\Components;
 
 use Closure;
 use Filament\Forms\Components\CheckboxList;
+use Illuminate\Validation\Rules\Enum;
+use Illuminate\Validation\Rules\In;
+use LaraZeus\MatrixChoice\MatrixStateCast;
 
 class Matrix extends CheckboxList
 {
@@ -21,20 +24,34 @@ class Matrix extends CheckboxList
     {
         parent::setUp();
 
-        $this->rules([
-            function () {
-                return function (string $attribute, mixed $value, Closure $fail) {
+        $this
+            ->stateCast(app(MatrixStateCast::class))
+            ->rules([
+                fn () => function (string $attribute, mixed $value, Closure $fail) {
+                    $pillColor = $this->getPilColor();
                     if ($this->rowSelectRequired && (blank($value) || count($this->getRowData()) !== count($value))) {
                         $fail(__('required a selection for each row'));
                     }
-                    foreach ($value as $val) {
-                        if ($this->rowSelectRequired && is_array($val) && blank(array_filter($val))) {
+
+                    foreach ($value as $rowData => $columnData) {
+                        if ($this->rowSelectRequired && is_array($columnData) && blank(array_filter($columnData))) {
                             $fail(__('required a selection for each row'));
                         }
+
+                        if (! in_array($rowData, array_keys($this->getRowData()))) {
+                            $fail(__('the selected :attribute is invalid'));
+                        }
+
+                        if ($pillColor === 'checkbox' && count(array_diff_key($columnData, $this->getColumnData()))) {
+                            $fail(__('the selected :attribute is invalid'));
+                        }
+
+                        if ($pillColor === 'radio' && ! in_array($columnData, array_keys($this->getColumnData()))) {
+                            $fail(__('the selected :attribute is invalid'));
+                        }
                     }
-                };
-            },
-        ]);
+                },
+            ]);
     }
 
     public function columnData(array $data): static
@@ -85,5 +102,10 @@ class Matrix extends CheckboxList
         $this->rowSelectRequired = $rowSelectRequired;
 
         return $this;
+    }
+
+    public function getInValidationRule(): In | Enum | null
+    {
+        return null;
     }
 }
