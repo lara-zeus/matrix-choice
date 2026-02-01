@@ -73,18 +73,26 @@ class MatrixStateCast extends OptionsArrayStateCast
             $state = json_decode($state, associative: true);
         }
 
+        $keys = array_keys(Arr::wrap($state));
+
         return array_reduce(
             Arr::wrap($state),
-            function (array $carry, $stateItem): array {
+            function (array $carry, $stateItem) use (&$keys): array {
                 if (blank($stateItem)) {
                     return $carry;
                 }
+
+                $key = array_shift($keys);
 
                 if ($stateItem instanceof BackedEnum) {
                     $stateItem = $stateItem->value;
                 }
 
-                $carry[] = strval($stateItem);
+                if (is_array($stateItem)) {
+                    $carry[$key] = $stateItem;
+                } else {
+                    $carry[] = strval($stateItem);
+                }
 
                 return $carry;
             },
