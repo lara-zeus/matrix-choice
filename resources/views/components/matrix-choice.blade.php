@@ -39,7 +39,7 @@
                             <input
                                 {{ $attributes }}
                                 @if($isDisabled || ($isOptionDisabled($columnKey,'') && $isOptionDisabled($rowKey,''))) disabled @endif
-                                wire:key="{{ $id }}.{{ $rowKey }}"
+                                wire:key="{{ $id }}.{{ $rowKey }}.{{ $columnKey }}"
                                 wire:loading.attr="disabled"
                                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $supStatPath }}"
                                 value="{{ $columnKey }}"
