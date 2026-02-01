@@ -10,6 +10,7 @@ use LaraZeus\MatrixChoice\MatrixStateCast;
 
 class Matrix extends CheckboxList
 {
+    /** @phpstan-ignore-next-line  */
     protected string $view = 'zeus-matrix-choice::components.matrix-choice';
 
     protected array | Closure $columnData = [];
