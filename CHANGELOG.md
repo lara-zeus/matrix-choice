@@ -2,6 +2,24 @@
 
 All notable changes to `Matrix Choice` will be documented in this file
 
+## 4.0.2 - 2026-02-06
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/29
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/31
+* Bump stefanzweifel/git-auto-commit-action from 5 to 7 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/32
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/30
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/36
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/34
+* Add MatrixStateCast and enhance Matrix validation by @Abdulmajeed-Jamaan in https://github.com/lara-zeus/matrix-choice/pull/37
+
+### New Contributors
+
+* @Abdulmajeed-Jamaan made their first contribution in https://github.com/lara-zeus/matrix-choice/pull/37
+
+**Full Changelog**: https://github.com/lara-zeus/matrix-choice/compare/4.0.1...4.0.2
+
 ## 4.0.1 - 2025-10-24
 
 ### What's Changed
@@ -41,6 +59,7 @@ MatrixAlias::make('options')
         'companies'=>'Companies',
         'clients'=>'Clients',
     ]),
+
 
 
 
