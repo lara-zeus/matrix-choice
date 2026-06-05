@@ -21,7 +21,7 @@ class MatrixStateCast extends OptionsArrayStateCast
 
         return array_reduce(
             Arr::wrap($state),
-            function (array $carry, $stateItem) use (&$keys): array {
+            function (array $carry, mixed $stateItem) use (&$keys): array {
                 if (blank($stateItem)) {
                     return $carry;
                 }
