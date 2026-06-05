@@ -2,6 +2,18 @@
 
 All notable changes to `Matrix Choice` will be documented in this file
 
+## 5.0.1 - 2026-06-05
+
+### What's Changed
+
+* chore: align docs structure and cleanup by @atmonshi in https://github.com/lara-zeus/matrix-choice/pull/40
+* Bump dependabot/fetch-metadata from 2.5.0 to 3.0.0 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/39
+* Bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/38
+* Bump dependabot/fetch-metadata from 3.0.0 to 3.1.0 by @dependabot[bot] in https://github.com/lara-zeus/matrix-choice/pull/41
+* feat: allow hiding specific options by @atmonshi in https://github.com/lara-zeus/matrix-choice/pull/42
+
+**Full Changelog**: https://github.com/lara-zeus/matrix-choice/compare/5.0.0...5.0.1
+
 ## 4.0.2 - 2026-02-06
 
 ### What's Changed
@@ -59,6 +71,7 @@ MatrixAlias::make('options')
         'companies'=>'Companies',
         'clients'=>'Clients',
     ]),
+
 
 
 
