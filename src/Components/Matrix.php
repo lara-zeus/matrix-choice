@@ -105,6 +105,27 @@ class Matrix extends CheckboxList
         return $this;
     }
 
+    protected Closure | bool $hideOptionWhen = false;
+
+    public function hideOptionWhen(Closure | bool $condition): static
+    {
+        $this->hideOptionWhen = $condition;
+
+        return $this;
+    }
+
+    public function isOptionHidden(string $rowKey, string $columnKey): bool
+    {
+        if ($this->hideOptionWhen === false) {
+            return false;
+        }
+
+        return (bool) $this->evaluate($this->hideOptionWhen, [
+            'rowKey' => $rowKey,
+            'columnKey' => $columnKey,
+        ]);
+    }
+
     public function getInValidationRule(): In | Enum | null
     {
         return null;

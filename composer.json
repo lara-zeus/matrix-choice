@@ -30,37 +30,46 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "filament/filament": "^5.0",
         "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest",
+        "larastan/larastan": "^3.0",
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^8.0",
-        "larastan/larastan": "^3.0",
-        "orchestra/testbench": "^10.0",
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-laravel": "^4.1",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan": "^2.1",
         "phpstan/phpstan-deprecation-rules": "^2.0",
-        "phpstan/phpstan-phpunit": "^2.0"
+        "phpstan/phpstan-phpunit": "^2.0",
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-4": {
             "LaraZeus\\MatrixChoice\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
         "format": "vendor/bin/pint",
         "pint": "vendor/bin/pint",
+        "test": "vendor/bin/pest",
         "test:phpstan": "vendor/bin/phpstan analyse"
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "pestphp/pest-plugin": true
         }
     },
     "extra": {
