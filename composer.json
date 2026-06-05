@@ -30,7 +30,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "filament/filament": "^5.0",
         "spatie/laravel-package-tools": "^1.16"
     },
