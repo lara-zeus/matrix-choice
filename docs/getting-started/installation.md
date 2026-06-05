@@ -40,5 +40,8 @@ Matrix::make('question')
     
     // to disable any options:
     ->disableOptionWhen(fn (string $value): bool => $value === 'm' || $value === 'p' || $value === 'users')
+
+    // to hide any options completely:
+    ->hideOptionWhen(fn (string $rowKey, string $columnKey): bool => $rowKey === 'users' && $columnKey === 'm')
     ,
 ```

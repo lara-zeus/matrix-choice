@@ -26,25 +26,27 @@
                     <td class="p-2">{{ $rowValue }}</td>
                     @foreach($columnData as $columnKey => $columnValue)
                         <td class="p-2 text-center">
-                            @php
-                                $supStatPath = ($pilColor === 'radio') ? $statePath.'.'.$rowKey : $statePath.'.'.$rowKey.'.'.$columnKey ;
-                                $attributes = $attributes
-                                    ->class([
-                                        'fi-checkbox-input' => $pilColor === 'checkbox',
-                                        'fi-radio-input' => $pilColor === 'radio',
-                                        'fi-valid' => ! $errors->has($statePath),
-                                        'fi-invalid' => $errors->has($statePath),
-                                    ])
-                            @endphp
-                            <input
-                                {{ $attributes }}
-                                @if($isDisabled || ($isOptionDisabled($columnKey,'') && $isOptionDisabled($rowKey,''))) disabled @endif
-                                wire:key="{{ $id }}.{{ $rowKey }}.{{ $columnKey }}"
-                                wire:loading.attr="disabled"
-                                {{ $applyStateBindingModifiers('wire:model') }}="{{ $supStatPath }}"
-                                value="{{ $columnKey }}"
-                                type="{{ $pilColor }}"
-                            />
+                            @if(! $isOptionHidden($rowKey, $columnKey))
+                                @php
+                                    $supStatPath = ($pilColor === 'radio') ? $statePath.'.'.$rowKey : $statePath.'.'.$rowKey.'.'.$columnKey ;
+                                    $attributes = $attributes
+                                        ->class([
+                                            'fi-checkbox-input' => $pilColor === 'checkbox',
+                                            'fi-radio-input' => $pilColor === 'radio',
+                                            'fi-valid' => ! $errors->has($statePath),
+                                            'fi-invalid' => $errors->has($statePath),
+                                        ])
+                                @endphp
+                                <input
+                                    {{ $attributes }}
+                                    @if($isDisabled || ($isOptionDisabled($columnKey,'') && $isOptionDisabled($rowKey,''))) disabled @endif
+                                    wire:key="{{ $id }}.{{ $rowKey }}.{{ $columnKey }}"
+                                    wire:loading.attr="disabled"
+                                    {{ $applyStateBindingModifiers('wire:model') }}="{{ $supStatPath }}"
+                                    value="{{ $columnKey }}"
+                                    type="{{ $pilColor }}"
+                                />
+                            @endif
                         </td>
                     @endforeach
                 </tr>
