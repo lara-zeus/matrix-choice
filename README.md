@@ -60,3 +60,12 @@ If you find any security-related issues, please email info@larazeus.com instead 
 ## License
 
 The MIT License (MIT). Please have a look at [License File](LICENSE.md) for more information.
+
+## Versions
+
+| Plugin Version | Filament Version |
+| --- | --- |
+| `v1.x` | `v2.x` |
+| `v2.x` | `v3.x` |
+| `v3.x` | `v3.x` |
+
